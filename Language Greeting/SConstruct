@@ -1,0 +1,28 @@
+# greetings_bot.py
+
+# Dictionary of greetings in different languages
+greetings = {
+    "english": "Hello!",
+    "spanish": "Hola!",
+    "French": "Bonjour",
+    "Italian": "Ciao",
+    "Portuguese": "olá",
+    "chinese": "你好!",
+    "japanese": "こんにちは!",
+    "korean": "안녕하세요!",
+    "russian": "Здравствуйте!",
+    "arabic": "مرحبا!",
+}
+
+# Function to greet a person in a specified language
+def greet(language):
+  if language.lower() in greetings:
+    return greetings[language.lower()]
+  else:
+    return "Sorry, I don't know how to greet in that language."
+
+# Get input from the user
+language = input("What is your preferred language? ")
+
+# Greet the user
+print(greet(language))
